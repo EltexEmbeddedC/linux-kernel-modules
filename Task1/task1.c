@@ -6,7 +6,7 @@
 
 static int major = 0;
 static rwlock_t lock;
-static char test_string[15] = "Hello!\0";
+static char test_string[15] = "Hello!\n";
 
 ssize_t test_read(struct file *fd, char __user *buff, size_t size, loff_t *off) {
     size_t rc;
