@@ -57,3 +57,11 @@ sudo echo "12345" > task1
 ```bash
 sudo cat task1
 ```
+
+После проведения тестирования удалим файл устройства и выгрузим модуль из ядра:
+
+```bash
+sudo rm /dev/task1
+sudo rmmod task1
+```
+
