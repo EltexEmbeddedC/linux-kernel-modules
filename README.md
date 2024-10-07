@@ -24,3 +24,36 @@ sudo insmod task1.ko
 sudo dmesg | tail -n10
 ```
 
+![image](https://github.com/user-attachments/assets/e009b840-36a9-4785-b598-1c270746eb08)
+
+Создадим файл устройства в `/dev`, выполнив команду:
+
+```bash
+sudo mknod task1 c 511 0
+```
+
+Повысим права доступа к файлу:
+
+```bash
+sudo chmod +0666 task1
+```
+
+![image](https://github.com/user-attachments/assets/7fa66311-072b-40c4-9e04-adde75dec15c)
+
+Выведем его содержимое:
+
+```bash
+sudo cat task1
+```
+
+Изменим содержимое:
+
+```bash
+sudo echo "12345" > task1
+```
+
+Снова выведем содержимое:
+
+```bash
+sudo cat task1
+```
