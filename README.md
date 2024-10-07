@@ -49,7 +49,7 @@ sudo cat task1
 Изменим содержимое:
 
 ```bash
-sudo echo "12345" > task1
+sudo echo "123456789" > task1
 ```
 
 Снова выведем содержимое:
@@ -58,10 +58,11 @@ sudo echo "12345" > task1
 sudo cat task1
 ```
 
+![image](https://github.com/user-attachments/assets/6249c4a9-aa9d-4821-a763-38408a31d388)
+
 После проведения тестирования удалим файл устройства и выгрузим модуль из ядра:
 
 ```bash
 sudo rm /dev/task1
 sudo rmmod task1
 ```
-
