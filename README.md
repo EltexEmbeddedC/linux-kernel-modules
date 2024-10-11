@@ -10,7 +10,7 @@
 
 ## Задание: написать модуль ядра, который предоставляет механизм общения kernel space и user space посредством символьного файла устройства, а также виртуальных файловых систем sys и proc
 
-Код представлен в директории [/Task](https://github.com/EltexEmbeddedC/linux-kernel-modules/blob/main/Task). После сборки модуля установим его в ядро:
+Код представлен в директории [Task](https://github.com/EltexEmbeddedC/linux-kernel-modules/blob/main/Task). После сборки модуля установим его в ядро:
 
 ```bash
 sudo insmod task1.ko
